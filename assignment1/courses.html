@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses form</title>
+    <link rel="stylesheet" href="courses.css">
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header id="main_header">
+            <div class="d-flex">
+                <img src="img/logo.png" style="margin-right: 10px;" alt="" id="logo">
+                <h2 class="header-text">
+                    <a href="test1.html"> Private School </a></h2>
+            </div>
+
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="#footerTag">About us</a> </li>
+                    <li><a href="#footerTag">Contact us</a> </li>
+                    <li><a href="">Sign out</a> </li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+
+
+        <div id="form_div">
+            <section id="menuDiv">
+
+                <h2><a href="CoursePer.html">More about Courses </a></h2>
+            </section>
+            <table id="table3" border="1">
+                <caption>Courses</caption>
+                <tr>
+                    <th>Course</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Time</th>
+                    <th colspan="2">Place</th>
+                </tr>
+            </table>
+            <button onclick="showAddForm()"><a href="#" >Add</a></button>
+        </div>
+
+
+        <div id="form_style">
+            <form id="new_form">
+                <h2>Add a Course:</h2>
+                <label for="courses">Choose a course</label>
+                <select name="mathimata" id="courses">
+                    <option value="">Choose a course</option>
+                    <option value="Java">java</option>
+                    <option value="C#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Html/Css">Html/Css</option>
+                </select>
+                <label for="startDate">Start date</label>
+                <input type="date" id="startDate" name="startDate" placeholder="Start date" value="" min="2020-11-20">
+                <label for="endDate">End date</label>
+                <input type="date" id="endDate" name="endDate" placeholder="End date" value="" max="2021-01-30">
+                <label for="time">Set time plan</label>
+                <select name="place" id="time">
+                    <option value="">Choose Time</option>
+                    <option value="fullTime">Full-time</option>
+                    <option value="partTime">Part-time</option>
+
+                </select>
+                <label for="place1">Choose place</label>
+                <select name="place" id="place1">
+                    <option value="">Choose place</option>
+                    <option value="online">Online</option>
+                    <option value="onCampus">OnCampus</option>
+                </select>
+
+                <input type="button" id="update_form" onclick="editCourse()" value="Update"></input>
+                <input type="button" id="new_entry" onclick="hideAddForm()" value="Submit"></input>
+
+            </form>
+        </div>
+    </div>
+    <div id="footerTag">
+        <footer class="footer">
+            <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus dicta eius error
+                sunt aspernatur excepturi? Voluptatibus omnis voluptatum quae?<br>
+                Contact us :
+                <a href="#">privateSchool@example.com</a></p>
+        </footer>
+    </div>
+    <script src="courses.js"></script>
+</body>
+
+</html>

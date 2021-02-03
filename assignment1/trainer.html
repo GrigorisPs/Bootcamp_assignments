@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trainer form</title>
+    <link rel="stylesheet" href="trainer.css">
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="container">
+        <header id="main_header">
+            <div class="d-flex">
+                <img src="img/logo.png" style="margin-right: 10px;" alt="" id="logo">
+                <h2 class="header-text">
+                    <a href="test1.html"> Private School </a></h2>
+            </div>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="#about">About us</a> </li>
+                    <li><a href="#about">Contact us</a> </li>
+                    <li><a href="">Sign out</a> </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div id="form_div">
+            <h2>Trainers</h2>
+            <table id="table1" border="1">
+                <caption>Our Trainers</caption>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th colspan="2">Subject</th>
+
+                </tr>
+            </table>
+            <button id="btn_submit" onclick="showAddForm()"><a href="#">Add</a></button>
+
+        </div>
+
+    </div>
+
+    <div id="form_style">
+        <form action="" id="new_form">
+            <label for="new_name">First name</label>
+            <input type="text" pattern="[a-zA-Z]*" id="new_name" placeholder="First Name">
+            <label for=" new_last_name">Last name</label>
+            <input type="text" pattern="[a-zA-Z]*" id="new_last_name" placeholder="Last Name">
+            <label for="subject">Create a subject</label>
+            <select name="subject" id="new_subject">
+                <option value="">Create a subject</option>
+                <option value="Java">java</option>
+                <option value="C#">C#</option>
+                <option value="C++">C++</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Angural">Angural</option>
+                <option value="Node js">Node js</option>
+                <option value="Android">Android</option>
+            </select>
+            <input type="submit" id="update_form" onclick="editTrainer()" value="Update"></input>
+            <input type="submit" id="new_entry" onclick="hideAddForm()" value="Submit"></input>
+        </form>
+    </div>
+
+
+    <footer class="footer">
+        <p id="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi itaque quod odit maiores aut
+            dolorem numquam explicabo doloribus repellendus aspernatur!<br>
+            Contact us :
+            <a href="#">privateSchool@example.com</a></p>
+    </footer>
+    <script src="trainer.js"></script>
+</body>
+
+</html>

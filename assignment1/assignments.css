@@ -1,0 +1,271 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#logo {
+    width: 50px;
+    height: 50px;
+}
+.d-flex {
+    display: flex;
+}
+.header-text {
+    display: flex;
+    align-items: center;
+}
+#yolo {
+    display: flex;
+    justify-content: center;
+}
+#container {
+    width: 100%;
+    display: block;
+}
+body {
+    font-size: 17px;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    background-color: #87bba2;
+    color: #f1fa8d;
+}
+#new_form{
+    display: none;
+    
+}
+#form_style{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+
+#form_style input{
+    background-color:#aaf5d1;
+}
+#update_form{
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;  
+    
+}
+#update_form  input[style=button]{
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;
+}
+#update_form  input[style=button]:hover{
+    
+        background: linear-gradient(to bottom, #ffab23 5%, #ecf39e 100%);
+        background-color: #e4aa4dad;
+}
+#update_form input[style=button]:active{
+    position: relative;
+    top: 1px;
+}
+
+#new_entry{
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;  
+    
+}
+#new_entry  input[style=button]{
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;
+}
+#new_entry  input[style=button]:hover{
+    
+        background: linear-gradient(to bottom, #ffab23 5%, #ecf39e 100%);
+        background-color: #e4aa4dad;
+}
+#new_entry input[style=button]:active{
+    position: relative;
+    top: 1px;
+}
+#form_style select{
+     background-color: #aaf5d1;
+
+}
+
+table input {
+    background-color: #c9dad1;
+}
+a {
+    color: #f1fa8d;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(143, 135, 33);
+}
+p {
+    text-align: center;
+    color: #000;
+    font-size: 2em;
+    font-display: none;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+#main_header {
+    display: flex;
+    justify-content: space-between;
+}
+#main_header h2 {
+    color: #ecf39e;
+}
+#main_nav {
+    /* color:#3fc1c0; */
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+#main_nav ul li {
+    color: #3fc1c0;
+    display: inline;
+}
+#new_form{
+    flex-direction: column;
+}
+
+#form_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 150px;
+}
+
+#form_div button{
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;
+    }
+#form_div button:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ecf39e 100%);
+    background-color: #e4aa4dad;
+    }
+#form_div button:active {
+    position: relative;
+    top: 1px;
+}
+#btn_submit {
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;
+}
+#btn_submit:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ecf39e 100%);
+    background-color: #e4aa4dad;
+}
+#btn_submit:active {
+    position: relative;
+    top: 1px;
+}
+
+#btn_submit {
+    box-shadow: 0px 1px 0px 0px #ecf39e;
+    background: linear-gradient(to bottom, #a2a57d 5%, #ecf39e 100%);
+    background-color: #adada8;
+    border-radius: 6px;
+    border: 1px solid #878a6d;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #ecf39e;
+}
+#btn_submit:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ecf39e 100%);
+    background-color: #e4aa4dad;
+}
+#btn_submit:active {
+    position: relative;
+    top: 1px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 77vh;
+    padding: 3px;
+    background-color: rgb(122, 120, 119);
+    color: white;
+  }

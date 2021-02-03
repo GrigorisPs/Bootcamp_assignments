@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses form</title>
+    <link rel="stylesheet" href="CoursePer.css">
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <header id="main_header">
+            <div class="d-flex">
+                <img src="img/logo.png" style="margin-right: 10px;" alt="" id="logo">
+                <h2 class="header-text">
+                    <a href="test1.html"> Private School </a></h2>
+            </div>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="#footerTag">About us</a> </li>
+                    <li><a href="#footerTag">Contact us</a> </li>
+                    <li><a href="">Sign out</a> </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div id="second_div">
+            <h2 onclick="showCoursePerTrainer()" id="course_per_trainer"> Course per Trainer </h2>
+            <h2 onclick="showCoursePerStudent()" id="course_per_student">Course per Student</h2>
+            <h2 onclick="showCoursePerAssignment()" id="course_per_assignment">Course per Assignment </h2>
+        </div>
+
+        <div id="per_student">
+            <form action="" id="form_student">
+                <h2>Course per Student</h2>
+                <label for="first_s">First name:</label>
+                <input type="text" pattern="[a-zA-Z]*" id="first_s" placeholder="First name" required>
+                <label for="last_s">Last name:</label>
+                <input type="text" pattern="[a-zA-Z]*" id="last_s" placeholder="Last name">
+                <label for="birth_s">Date of birth:</label>
+                <input type="date" placeholder="Date of birth" id="birth_s" min="2003-01-01">
+                <label for="new_fee">Payment method:</label>
+                <select name="fee" id="new_fee">
+                    <option value="">PayMethod</option>
+                    <option value="Bymonth">Bymonth</option>
+                    <option value="Upfront">UpFront</option>
+                </select>
+
+
+                <label for="courses">Choose a Course:</label>
+                <select name="mathimata" id="courses">
+                    <option value="">Choose a course</option>
+                    <option value="java">java</option>
+                    <option value="c#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Html/Css">Html/Css</option>
+                </select>
+                <label for="startDate">Start date</label>
+                <input type="date" id="startDate" name="startDate" placeholder="Start date" value="" min="2020-11-20">
+                <label for="endDate">End date</label>
+                <input type="date" id="endDate" name="endDate" placeholder="End date" value="" max="2021-01-30">
+                <label for="time">Set time plan</label>
+                <select name="place" id="time">
+                    <option value="">Time plan</option>
+                    <option value="fullTime">Full-time</option>
+                    <option value="partTime">Part-time</option>
+
+                </select>
+                <label for="place1">Choose place</label>
+                <select name="place" id="place1">
+                    <option value="">Choose place</option>
+                    <option value="Online">Online</option>
+                    <option value="OnCampus">OnCampus</option>
+                </select>
+                <button id="" onclick="">submit</button>
+
+            </form>
+        </div>
+
+        <div id="per_trainer">
+            <form action="" id="form_trainer">
+                <h2>Course per trainer</h2>
+                <label for="first_t">First name:</label>
+                <input type="text" pattern="[a-zA-Z]*" name="first_t" id="first_t" placeholder="First name">
+                <label for="last_t">Last name:</label>
+                <input type="text" pattern="[a-zA-Z]*" name="last_t" id="last_t" placeholder="Last name">
+                <label for="new_subject">Create a Subject</label>
+                <select name="subject" id="new_subject">
+                    <option value="">Create a subject:</option>
+                    <option value="Java">java</option>
+                    <option value="C#">C#</option>
+                    <option value="C++">C++</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Angural">Angural</option>
+                    <option value="Node js">Node js</option>
+                    <option value="Android">Android</option>
+                </select>
+                <label for="courses">Choose a Course:</label>
+                <select name="mathimata" id="courses">
+                    <option value="">Choose a course</option>
+                    <option value="java">java</option>
+                    <option value="c#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Html/Css">Html/Css</option>
+                </select>
+                <label for="startDate">Start date</label>
+                <input type="date" id="startDate" name="startDate" placeholder="Start date" value="" min="2020-11-20">
+                <label for="endDate">End date</label>
+                <input type="date" id="endDate" name="endDate" placeholder="End date" value="" max="2021-01-30">
+
+                <label for="time">Set time plan</label>
+                <select name="place" id="time">
+                    <option value="">Time plan</option>
+                    <option value="fullTime">Full-time</option>
+                    <option value="partTime">Part-time</option>
+
+                </select>
+                <label for="place1">Choose place</label>
+                <select name="place" id="place1">
+                    <option value="">Choose place</option>
+                    <option value="Online">Online</option>
+                    <option value="OnCampus">OnCampus</option>
+                </select>
+
+                <button id="" name="new_for" onclick="">submit</button>
+            </form>
+        </div>
+        <div id="per_assign">
+            <form action="" id="form_assign">
+                <h2>Course per Assignment</h2>
+                <label for="assigntment">Choose an Assignment:</label>
+                <select name="assignment" id="assignment">
+                    <option value="#">Assignment</option>
+                    <option value="simple Forms">Front-end with simple forms</option>
+                    <option value="Javascript in Simple Forms">Add js in Simple forms assignment</option>
+                    <option value="Web Page">Create a dynamic web page</option>
+                    <option value="Web Game">Create a web game</option>
+                    <option value="Eshop">create an eshop</option>
+                    <option value="Database">create a database</option>
+                </select>
+                <label for="submission">Submission date:</label>
+                <input type="date" placeholder="Submission-Date" id="submission" min="2020-12-01" max="2021-02-01" />
+                <label for="oral">Oral mark:</label>
+                <input type="number" name="oralMark" id="oral" placeholder="Oral mark" min="0" max="20">
+                <label for="assign">Assignment Mark:</label>
+                <input type="text" name="assignmentMark" id="assign" placeholder="Assignment Mark" min="0" max="80">
+                <label for="total">Total mark:</label>
+                <input type="text" name="totalMark" id="total" placeholder="Total Mark" min="0" max="100">
+
+                <label for="courses">Choose a Course:</label>
+                <select name="mathimata" id="courses">
+                    <option value="">Choose a course</option>
+                    <option value="java">java</option>
+                    <option value="c#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="Html/Css">Html/Css</option>
+                </select>
+                <label for="startDate">Start date</label>
+                <input type="date" id="startDate" name="startDate" placeholder="Start date" value="" min="2020-11-20">
+                <label for="endDate">End date</label>
+                <input type="date" id="endDate" name="endDate" placeholder="End date" value="" max="2021-01-30">
+                <label for="time">Set time plan</label>
+                <select name="place" id="time">
+                    <option value="">Time plan</option>
+                    <option value="fullTime">Full-time</option>
+                    <option value="partTime">Part-time</option>
+
+                </select>
+                <label for="place1">Choose place</label>
+                <select name="place" id="place1">
+                    <option value="">Choose place</option>
+                    <option value="Online">Online</option>
+                    <option value="OnCampus">OnCampus</option>
+                </select>
+                <button id="new_entry" onclick="">submit</button>
+            </form>
+        </div>
+
+
+    </div>
+
+    <div id="footerTag">
+        <footer class="footer">
+            <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti doloribus dicta eius error
+                sunt aspernatur excepturi? Voluptatibus omnis voluptatum quae?
+                Contact us :
+                <a href="#">privateSchool@example.com</a></p>
+        </footer>
+    </div>
+    <script src="CoursePer.js"></script>
+</body>
+
+</html>

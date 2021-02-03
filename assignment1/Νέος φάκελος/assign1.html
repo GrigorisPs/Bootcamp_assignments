@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private School Structure</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="menu">
+        <a href="#/">Home</a>
+        <div id="choices">
+            <ul>
+                <li><a href="#/" onclick="showTableTrainer('Trainer')">Trainer</a></li>
+
+                <li><a href="#/" onclick="showTableStudent('Student')">Student</a></li>
+
+                <li><a href="#/" onclick="showTableCourses('Course')">Course</a></li>
+
+                <li> <a href="#/" onclick="showTableAssign('Assignments')">Assignments</a> </li>
+
+            </ul>
+        </div>
+        <a href="#">Contact us</a>
+    </nav>
+    <div>
+        <table border="" id="courses_table">
+            <caption id="table_caption"></caption>
+            <tr>
+                <td>Title</td>
+                <td>Stream</td>
+                <td>Type</td>
+                <td>Start Date</td>
+                <td>End Date</td>
+                <td><button>edit</button></td>
+            </tr>
+        </table>
+
+        <table border="" id="trainer_table">
+            <caption id="table_caption"></caption>
+
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Subject</td>
+            </tr>
+            <tr>
+                <td>Greg</td>
+                <td>Palaio</td>
+                <td>Math</td>
+                <td><button id="table_button">edit</button></td>
+            </tr>
+        </table>
+        <table border="" id="student_table">
+            <caption id="table_caption"></caption>
+            <tr>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Date of Birth</td>
+                <td>Tuition Fees</td>
+                <td><button id="table_button">edit</button></td>
+            </tr>
+        </table>
+        <table border="" id="assignment_table">
+            <caption id="table_caption"></caption>
+            <tr>
+                <td>Title</td>
+                <td>Description</td>
+                <td>subDateTime</td>
+                <td>Oral_Mark </td>
+                <td>Total_Mark</td>
+                <td><button id="table_button">edit</button></td>
+            </tr>
+            <tr>
+                <td>Αssignment1</td>
+                <td>Private School</td>
+                <td>13/11/20</td>
+                <td> </td>
+                <td> </td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

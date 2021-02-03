@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="icon" href="img/logo.png" type="image/jpeg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="container">
+        <header id="main_header">
+            <div class="d-flex">
+                <img src="img/logo.png" style="margin-right: 10px;" alt="" id="logo">
+                <h2 class="header-text">
+                    <a href="test1.html"> Private School </a></h2>
+            </div>
+            <nav id="main_nav">
+                <ul>
+                    <li><a href="#about">About us</a> </li>
+                    <li><a href="#about">Contact us</a> </li>
+                    <li><a href="">Sign out</a> </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div id="form_div">
+            <table id="table2" border="1">
+                <caption>Our Students</caption>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                    <th>Date of birth</th>
+                    <th colspan="2">Fee</th>
+
+                </tr>
+            </table>
+            <button id="btn_submit" onclick="showAddForm()"><a href="#">Add</a></button>
+
+        </div>
+
+    </div>
+
+
+    <div id="form_style">
+
+        <form id="new_form">
+
+            <label for="new_name">First name</label>
+            <input type="text" pattern="[a-zA-Z]" id="new_name" placeholder="First Name">
+            <label for="new_last_name">Last name</label>
+            <input type="text" pattern="[a-zA-Z]" id="new_last_name" placeholder="Last Name">
+            <label for="new_birth">Date of birth</label>
+            <input type="date" id="new_birth" max="2003-01-01" value="">
+            <label for="new_fee">Payment method</label>
+            <select name="fee" id="new_fee">
+                <option value="">PayMethod</option>
+                <option value="Bymonth">Bymonth</option>
+                <option value="Upfront">UpFront</option>
+            </select>
+
+            <input type="submit" id="update_form" onclick="editStudent()" value="Update"></input>
+            <input type="submit" id="new_entry" onclick="hideAddForm()" value="Submit"></input>
+
+        </form>
+
+
+    </div>
+
+
+
+
+    <div id="footerTag">
+        <footer class="">
+            <p id="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nemo odio asperiores
+                blanditiis nam culpa totam explicabo saepe enim veritatis.<br>
+                Contact us :
+                <a href="#">privateSchool@example.com</a></p>
+        </footer>
+    </div>
+
+    </div>
+    <script src="student.js"></script>
+</body>
+
+</html>
