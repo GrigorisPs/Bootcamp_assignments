@@ -1,0 +1,49 @@
+<%- include('partials/head')%>
+    <%- include('partials/navbar') %>
+
+        <div class="container ">
+            <div class="row d-flex justify-content-center align-items-center mt-5">
+                <div class="col-4 col-md-4 offset-1   ">
+                    <form action="" method="POST">
+                        <div class="form-group">
+
+                            <label for="first_name" class="text-center"></label>
+                            <input type="text" class="form-control bg-light" placeholder="Enter first name"
+                                id="first_name" name="first_name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="last_name" class="text-center"></label>
+                            <input type="text" class="form-control" placeholder="Enter last name" id="last_name"
+                                name="last_name">
+                        </div>
+
+                        <label for="subject"></label>
+                        <select name="subject" class="custom-select">
+                            <option value="" selected>Create a subject</option>
+                            <option value="Java">Java</option>
+                            <option value="C#">C#</option>
+                            <option value="C++">C++</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="Angural">Angular</option>
+                            <option value="Node js">Node js</option>
+                            <option value="Android">Android</option>
+                        </select>
+
+                        <div class=" input-group my-2 ">
+                            <button type="submit" class="btn btn-primary btn-sm p-2 mt-2">Add new Trainer</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="message">
+            <%= message %>
+        </div>
+
+
+
+
+
+        <%- include('partials/footer')%>

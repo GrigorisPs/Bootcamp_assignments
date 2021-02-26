@@ -1,0 +1,48 @@
+<%- include('partials/head')%>
+    <%- include('partials/navbar') %>
+
+
+        <div class="container text-center ">
+            <h1 class=" display-3 text-light">
+                <%= title %>
+            </h1>
+
+            <table class=" table table-hover d-flex justify-content-center align-items-center font-weight-bold ">
+
+                <tr class="border border-dark bg-secondary">
+
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Tuition fees</th>
+
+                </tr>
+
+                <% for(let i=0; i < student.length; i++) { %>
+                    <tr>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= student[i].id %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= student[i].first_name %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= student[i].last_name %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= student[i].date_of_birth.getDate() %> / <%= student[i].date_of_birth.getMonth()+1 %>
+                                    /
+                                    <%= student[i].date_of_birth.getFullYear() %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= student[i].tuition_fees %>
+                        </td>
+                    </tr>
+                    <% } %>
+
+            </table>
+            <a href="http://localhost:3000/students/add" class="btn btn-primary mt-2 ">add new student </a>
+
+
+            <%- include('partials/footer')%>

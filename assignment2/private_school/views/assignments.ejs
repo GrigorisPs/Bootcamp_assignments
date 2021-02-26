@@ -1,0 +1,48 @@
+<%- include('partials/head')%>
+    <%- include('partials/navbar') %>
+
+        <div class="container text-center">
+            <h1 class=" display-3 text-light">
+                <%= title %>
+            </h1>
+            <table class=" table table-hover d-flex justify-content-center align-items-center font-weight-bold">
+
+                <tr class="border border-dark bg-secondary">
+                    <th scope="col">ID</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Submission date</th>
+                    <th scope="col">Total mark</th>
+
+
+                </tr>
+                <% for(let i=0; i < assignments.length; i++) { %>
+                    <tr class="border border-dark">
+                        <td class="border border-dark shadow" scope="row">
+                            <%= assignments[i].id %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= assignments[i].title %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= assignments[i].description %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= assignments[i].submission_date.getDate() %> / <%=
+                                    assignments[i].submission_date.getMonth()+1 %> /
+                                    <%= assignments[i].submission_date.getFullYear() %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= assignments[i].total_mark %>
+                        </td>
+
+
+                    </tr>
+                    <% } %>
+
+            </table>
+
+        </div>
+
+
+        <%- include('partials/footer')%>

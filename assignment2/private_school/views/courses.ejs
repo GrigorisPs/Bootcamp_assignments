@@ -1,0 +1,48 @@
+<%- include('partials/head')%>
+    <%- include('partials/navbar') %>
+
+
+        <div class="container text-center">
+            <h1 class=" display-3 text-light">
+                <%= title %>
+            </h1>
+            <table class=" table table-hover d-flex justify-content-center align-items-center font-weight-bold">
+
+                <tr class="border border-dark bg-secondary">
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Stream</th>
+                    <th>Type</th>
+                    <th>Start date</th>
+                    <th>End date</th>
+                </tr>
+                <% for(let i=0; i < course.length; i++) { %>
+                    <tr class="border border-dark">
+                        <td class="border border-dark text-dark shadow" scope="row">
+                            <%= course[i].id %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= course[i].title %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= course[i].stream %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= course[i].type %>
+                        </td>
+                        <td class="border border-dark shadow" scope="row">
+                            <%= course[i].start_date.getDate() %> / <%= course[i].start_date.getMonth()+1 %> /
+                                    <%= course[i].start_date.getFullYear() %>
+                        </td>
+                        <td class="border border-dark">
+                            <%= course[i].end_date.getDate() %> / <%= course[i].end_date.getMonth()+1 %> /
+                                    <%= course[i].end_date.getFullYear() %>
+                        </td>
+                    </tr>
+                    <% } %>
+
+            </table>
+        </div>
+
+
+        <%- include('partials/footer')%>
